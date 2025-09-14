@@ -3,6 +3,20 @@
     font-family: 'Raleway', sans-serif;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10;
+}
+
+nav ul{
+    display: flex ;
+    justify-content: start;
+    gap: 2em;
+}
+
+
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -76,6 +90,13 @@ a {
     width: 65%;
 }
 
+.hebergements-cards img {
+    width: 33%;
+    height: 133px;
+    border-radius: 20px;
+    
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -119,6 +140,25 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+footer {
+  background-color: #F2F2F2;
+  display: flex;                
+  justify-content: space-around; 
+}
+
+footer .footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 
