@@ -56,7 +56,8 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 14px;
+    white-space: nowrap;
 }
 
 .euro {
@@ -176,6 +177,18 @@ header {
     align-items: center;
 }
 
+.filters-list {
+    display: flex;
+    flex-direction: row;
+    width: 103%;
+}
+
+#filters  {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .filters-btn {
     display: flex;
     align-items: center;
@@ -185,6 +198,7 @@ header {
     border-color: #D9D9D9;
     border: solid 1px;
     height: 30px;
+    white-space: nowrap;
 }
 
 .filters-btn:hover {
@@ -234,7 +248,6 @@ header {
 
 .hebergements-cards a {
     flex: 1 1 calc(33.333% - 20px);
-    min-width: 250px;
 }
 
 
@@ -361,9 +374,12 @@ footer ul {
         width: 100%;
     }
 
-    .hebergements-cards{
-    
-}
+    .filters {
+        
+        flex-direction: column;
+
+
+    }
 
     .populaires {
         width: 100%;
