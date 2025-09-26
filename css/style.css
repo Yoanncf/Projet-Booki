@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -43,7 +44,10 @@ a {
 }
 
 .card img {
+    width: 100%;
+    height: 124px;
     object-fit: cover;
+    border-radius: 16px;
 }
 
 .card-title {
@@ -63,19 +67,24 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 10;
+    margin-right: 10px;
+    border-top: 2px solid transparent;
 }
 
 nav img {
     width: 61.09px;
-    height: 19px;;
+    height: 19px;
+}
+
+nav a {
+    border-top: 2px solid transparent;
+    padding: 16px;
+    line-height: 100%;
 }
 
 nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding: 16px;
-    line-height: 100%;
 }
 
 nav ul{
@@ -103,20 +112,49 @@ header {
 
 }
 
-.eco-btn {
+.vector-i {
+    display: inline-block;
+    width: 4px; height: 10px;
+    border: 1px solid #D9D9D9 ;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    margin-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+ 
+.info {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
-   
+
+.filters-btn {
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+    border-radius: 25px;
+    padding: 4px 19px;
+    border-color: #D9D9D9;
+    border: solid 1px;
+}
+
+.filters-btn:hover {
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+}   
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .hebergements-and-populaires  section {
-    
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -126,24 +164,29 @@ header {
 .hebergements {
     background-color: var(--main-bg-color);
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px; 
+    box-sizing: border-box;
 }
-.hebergements-cards {
+
+.hebergements-cards{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    width: 100%;
-    
+    gap: 30px;
     
 }
 
-.hebergements-cards img {
+.hebergements-cards  img {
     width: 100%;
-    height: 133px;
+    height: 124px;
     border-radius: 20px;  
 }
-.hebergements-cards > a {
-    display: block;
-    width: 30%;
+
+.hebergements-cards a {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
 }
 
 
@@ -200,31 +243,44 @@ header {
 /****** Activités ***********/
 .activites {
     width: 100%;
-    display: flex;
-
-}
-
-.activites img{
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;  
-}
-
-.activites  section {
-    
+    flex-direction: column;
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    gap: 30px;
 }
 
+.activites .card{
+   border-radius: 20px;
+   padding: 1px;
+  
+}
+
+.activites-cards {
+    display: flex;
+    gap: 30px;
+    margin-left: -1em;
+}
+
+.activites img{
+    width: 297.5px;
+    height: 380px; 
+}
+.activites h3{
+    margin-left: 16px;
+}
 /****** Footer ***********/
 
 footer {
   background-color: #F2F2F2;
-  display: flex;                
-  justify-content: space-around; 
+  display: flex;
+  justify-content: start;
+  padding: 40px 50px;
+  gap: 15em;
+  
+  
 }
-
+ 
 footer .footer-section {
   display: flex;
   flex-direction: column;
@@ -235,7 +291,8 @@ footer ul {
   list-style: none;
   display: flex;
   flex-direction: column;
- 
+  gap: 15px;
+  padding: 0;
 }
 
 
@@ -276,13 +333,24 @@ footer ul {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites {
+        width: 100%;
+    }
+    .activites-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+/*Small devices (phones, less than 768px)*/
+@media (max-width: 768px) {
+  .activites {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .activites a {
+    width: 100%;
+  }
 }
 
-@media (max-width: 375.98px) {
-    
-}
