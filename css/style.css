@@ -179,14 +179,14 @@ header {
 
 .filters-list {
     display: flex;
-    flex-direction: row;
-    width: 103%;
+    width: auto;
 }
 
 #filters  {
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
 }
 
 .filters-btn {
@@ -374,12 +374,15 @@ footer ul {
         width: 100%;
     }
 
-    .filters {
-        
-        flex-direction: column;
-
-
-    }
+   .filters {
+    flex-direction: column;   /* titre au-dessus des boutons */
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .filters-list {
+    flex-wrap: wrap;          /* les boutons peuvent revenir à la ligne */
+  }
+}
 
     .populaires {
         width: 100%;
