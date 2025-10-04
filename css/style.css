@@ -454,15 +454,27 @@ nav div{
 nav ul {
     display: flex;
     justify-content: space-between;
-    max-width: 375px;
     align-items: center;
     width: 100%;
     gap: 0px;
 }
 
+ nav ul li {
+    list-style: none;
+    flex: 1 1 50%;
+  }
+
 nav a {
     padding-bottom: 15px;
+    margin-left: -30px;
 }
+
+nav ul li a {
+    display: block;           
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #E6E6E6;
+  }
 
 nav a:hover {
     color: #0065FC;
@@ -474,11 +486,14 @@ nav a:hover {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: none;
+    border: 0; overflow: visible;
 }
+
 
 .search-bar input {
     border-top: 1px solid rgba(0,0,0,0.2);
     border-bottom: 1px solid rgba(0,0,0,0.2);
+
 }
 
 .search-btn {
@@ -488,7 +503,7 @@ nav a:hover {
     padding: 0;
     min-width: 50px;
     flex-shrink: 0;
-    margin-right: 5px;
+   
 }
 
 .search-btn .btn-text {
