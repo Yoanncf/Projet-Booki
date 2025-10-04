@@ -434,7 +434,7 @@ footer {
 @media (max-width: 768px) {
 
 .main-container {
-    padding: 0 150px;
+    padding: 0;
 
 }
 header {
@@ -482,11 +482,24 @@ nav a:hover {
     border-top: none;
 }
 
+.title-mobil {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 auto;
+    width: 86%;
+}
+
+.title-mobil + p {
+    margin: 16px auto;
+    width: 86%;
+}
 .search-bar {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 10px;
     box-shadow: none;
-    border: 0; overflow: visible;
+    border: 0;
+    overflow: visible;
+    margin: 0 auto;
 }
 
 
@@ -516,6 +529,9 @@ nav a:hover {
     font-size: 1.3em;
 }
 
+#filters {
+  margin-left: 10px;
+}
 
 .filters-list{
     display: flex;
@@ -530,7 +546,7 @@ nav a:hover {
 .filters-btn {
     display: flex;
     justify-content: center;
-    width: 75%;
+
 }
 
 .filters {
