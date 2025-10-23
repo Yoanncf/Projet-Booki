@@ -140,7 +140,6 @@ header {
     max-width: 377px;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -569,8 +568,13 @@ nav a:hover {
     gap: 10px;
 }
 
-.filters-list a{
+.filters-list a {
     flex: 1 1 calc(50% - 10px);
+    margin-left: 3px;
+}
+
+.info {
+   margin-left: 20px;
 }
 
 .filters-btn {
@@ -582,7 +586,7 @@ nav a:hover {
 .filters {
     display: flex;
     justify-content: center;
-    gap: 10px;
+     margin-left: 10px;
 }
 
 .hebergements-and-populaires{
