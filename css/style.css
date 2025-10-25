@@ -21,13 +21,12 @@
 #main-container {
     max-width: 1440px;
     min-width: 320px;
-
+    margin: 0 auto;
 }
 
 #content-flex{ 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%; 
     padding: 0 40px;
     margin: 0 auto;
@@ -106,7 +105,7 @@ nav img {
 }
 
 nav a {
-    padding-top: 24px;
+    padding-top: 21px;
     line-height: 100%;
     font-size: 18px;
     font-weight: 400;
@@ -373,6 +372,10 @@ header {
     padding: 1px;
 }
 
+.activites-cards a {
+    flex: 1 1 calc(25% - 20px);
+}
+
 .activites-cards {
     display: flex;
     gap: 30px;
@@ -460,10 +463,6 @@ footer ul {
 .activites img {
     max-height: 200px;
     max-width: 100%;
-}
-
-.activites-cards a {
-    flex: 1 1 calc(25% - 20px);
 }
 
 .activites .card {
