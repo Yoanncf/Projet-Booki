@@ -19,14 +19,10 @@
 }
 
 #main-container {
-    max-width: 1440px;
-    min-width: 320px;
-    margin: 0 auto;
-}
-
-#content-flex{ 
     display: flex;
     flex-direction: column;
+    max-width: 1440px;
+    min-width: 320px;
     width: 100%; 
     padding: 0 40px;
     margin: 0 auto;
@@ -105,7 +101,7 @@ nav img {
 }
 
 nav a {
-    padding-top: 21px;
+    padding-top: 22px;
     line-height: 100%;
     font-size: 18px;
     font-weight: 400;
@@ -368,6 +364,7 @@ header {
 }
 
 .activites .card{
+    height: 439px;
     border-radius: 20px;
     padding: 1px;
 }
@@ -383,12 +380,11 @@ header {
 }
 
 .activites img{
-    max-width:297.5px;
     height: 380px;
     border-radius: 16px 16px 0px 0px; 
 }
 .activites h3{
-    margin-left: 16px;
+    margin: 20px 10px 20px 10px;
 }
 /****** Footer ***********/
 
