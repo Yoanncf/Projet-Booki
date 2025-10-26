@@ -300,7 +300,7 @@ header {
 
 
 #title-more {
-    margin: 15px 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 
@@ -355,12 +355,14 @@ header {
 
 
 /****** Activités ***********/
+#Activites {
+    margin: 20px -15px;
+}
+
 .activites {
-    width: 100%;
-    border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    gap: 30px;
+    margin-bottom: 10px;
 }
 
 .activites .card{
@@ -433,7 +435,6 @@ footer ul {
 .filters {
     flex-direction: column;   /* titre au dessus des boutons */
     align-items: flex-start;
-    gap: 10px;
 }
 .filters-list {
     flex-wrap: wrap;          /* les boutons peuvent revenir à la ligne */
@@ -466,9 +467,8 @@ footer ul {
 }
 
 footer {
-    display: flex;
-    flex-direction: row;        /* 1 seul ligne */
-    flex-wrap: nowrap;          /* bloque le retour a la ligne */
+    justify-content: flex-start;
+    gap: 10%
   }
 
 .footer-section {
@@ -482,7 +482,7 @@ footer {
 /*Small devices (phones, less than 768px)*/
 @media (max-width: 768px) {
 
-.main-container {
+#main-container {
     padding: 0;
 
 }
@@ -540,7 +540,7 @@ nav a:hover {
 }
 
 .title-mobil + p {
-    margin: 16px auto;
+    margin: 5px auto 25px auto;
     width: 86%;
 }
 .search-bar {
@@ -554,8 +554,8 @@ nav a:hover {
 
 
 .search-bar input {
-    border-top: 1px solid rgba(0,0,0,0.2);
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 
 }
 
@@ -599,15 +599,14 @@ nav a:hover {
 }
 
 .filters-btn {
-    display: flex;
-    justify-content: center;
-
+    width: 100%;
 }
 
 .filters {
     display: flex;
     justify-content: center;
-     margin-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .hebergements-and-populaires{
@@ -631,6 +630,10 @@ nav a:hover {
 .hebergements-cards {
     display: flex;
     flex-direction: column;
+}
+
+#title-more {
+    margin: 0 auto;
 }
 
 .activites a {
