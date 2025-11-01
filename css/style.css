@@ -147,10 +147,6 @@ header {
     align-items: center;
 }
 
-.filters-list p {
-   font-size: 14px;
-}
-
 .search-bar {
     display: flex;
     justify-content: center;
@@ -436,9 +432,7 @@ footer ul {
     flex-direction: column;   /* titre au dessus des boutons */
     align-items: flex-start;
 }
-.filters-list {
-    flex-wrap: wrap;          /* les boutons peuvent revenir à la ligne */
-}
+
 .populaires { /* Les plus populaires prend toutes la largeur */
     width: 100%;
     margin-top: 50px;
@@ -589,9 +583,9 @@ nav a:hover {
     gap: 10px;
 }
 
-.filters-list a {
+.filter {
+    display: flex;
     flex: 1 1 calc(50% - 10px);
-    margin-left: 3px;
 }
 
 .info {
